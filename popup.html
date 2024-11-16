@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Codeforces Problems</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+				background-color: #f4f4f9;
+			}
+
+			h1 {
+				font-size: 24px;
+				color: #333;
+				background-color: #e0e0e0;
+				padding: 10px;
+				border-radius: 5px;
+				text-align: center;
+			}
+
+			ul {
+				padding: 0;
+				list-style: none;
+				margin-top: 20px;
+			}
+
+			li {
+				margin: 10px 0;
+				padding: 10px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				background-color: #fff;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+
+			a {
+				text-decoration: none;
+				color: #1a73e8;
+				font-weight: bold;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			#userInputContainer {
+				margin-bottom: 20px;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+
+			#user-handle {
+				padding: 10px;
+				font-size: 16px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				width: 250px;
+			}
+
+			#get-problems-btn {
+				padding: 10px 15px;
+				font-size: 16px;
+				color: #fff;
+				background-color: #1a73e8;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			#get-problems-btn:hover {
+				background-color: #1558b0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Your Suggested Problems</h1>
+		<div id="userInputContainer">
+			<label for="user-handle">Enter your Codeforces handle: </label>
+			<input type="text" id="user-handle" />
+			<button id="get-problems-btn">Get Problems</button>
+		</div>
+		<ul id="problems-list"></ul>
+		<script src="popup.js"></script>
+	</body>
+</html>
